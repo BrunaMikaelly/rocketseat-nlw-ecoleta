@@ -22,9 +22,9 @@
 
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
+
     <link rel="stylesheet" href="/styles/reponsive.css" />
-
-
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             <header>
                 <img src="/assets/icones/logo.svg" alt="Logomarca" />
                 <a href="http://google.com.br">
-                    <span></span> Cadastre um ponto de coleta
+                    <span></span>Cadastre um ponto de coleta
                 </a>
             </header>
             <main>
@@ -42,10 +42,31 @@
                 <p>
                     Ajudamos pessoas a encontra pontos de coleta de forma eficiente.
                 </p>
-                <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a>
-            </main>
-        </div>
+                <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a
+          >
+        </main>
+      </div>
     </div>
+
+    <div id="modal" class="hide">
+      <div class="content">
+        <div class="header">
+          <h1>Pontos de Coleta</h1>
+          <a href="#">Fechar</a>
+        </div>
+        <form action="">
+            <label for="search">Cidade</label>
+            <div class="search field">
+                <input type="text" name="search" placeholder="Pesquise por cidade" />
+                <button>
+              <img src="/assets/icones/search.svg" alt="Buscar" />
+            </button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    <script src="/scripts/index.js"></script>
 </body>
 
 </html>
